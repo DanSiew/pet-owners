@@ -6,6 +6,14 @@ export class AppPage {
   }
 
   getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+    return element(by.id('petTitle')).getText() as Promise<string>;
+  }
+
+  getGenderTitle(gender: string): Promise<string> {
+    return element(by.id(gender)).getText() as Promise<string>;
+  }
+
+  getListItem() {
+    return element.all(by.css('.flight-details-list li'));
   }
 }
