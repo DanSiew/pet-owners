@@ -7,13 +7,13 @@ Refer Angular https://angular.io/
 
 The Pet Owners Web Application using @angular/cli and install @ngrx/store.
 
-The project callling a simple json web services in Azure Websites.  
+The project calls a simple json web services in Azure Websites.  
 
-The Web Application is built on the Angular using typescripts as Modules,Containers, Components, Services and Stores.
+The Web Application is built on the Angular using typescripts as Modules, Containers, Components, Services and Stores.
 
-The application consume the rest service and output a list of all the cats in alphabetical order under a heading of the gender of their owner.
+The application consumes the rest service and output a list of all the cats in alphabetical order under a heading of the gender of their owner.
 
-It has one main component - app.component and a container component owners list that consumes pet-owner service.
+It has one main component - app component and a container component owners list that consumes pet-owner service.
 
 The scripts uses the strong type using typescripts and es6 syntax and complies into javascripts.
 
