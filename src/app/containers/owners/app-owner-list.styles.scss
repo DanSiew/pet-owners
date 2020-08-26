@@ -1,0 +1,41 @@
+@import "../../../styles/mixin";
+@import "../../../styles/styles";
+
+.pet-owners {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  width: 90%;
+
+  @include md {
+    margin: 0 auto;
+    max-width: 768px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @include lg {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  mat-card {
+    margin-bottom: 16px;
+  }
+}
+
+.control-panel {
+  @include content-container-layout;
+  @include md {
+    display: flex;
+    flex-flow: row;
+  }
+}
+
+.error-msg {
+  color: #ff5722;
+  padding-bottom: 20px;
+}

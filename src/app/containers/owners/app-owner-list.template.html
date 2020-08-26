@@ -1,0 +1,30 @@
+<div class="pet-owners">
+  <h1>Pet Owners</h1>
+  <div *ngIf="error$ | async" class="error-msg">
+    <span>{{errorMessage}}</span>
+  </div>
+
+  <div class="control-panel" *ngIf="loaded$ | async">
+    <div *ngIf="(genderPetOwners$ | async); let genderPetOwners">
+      <mat-card *ngFor="let genderPetOwner of genderPetOwners">
+        <mat-card-header>
+          <mat-card-title>{{genderPetOwner.gender}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul class="flight-details-list">
+            <li class="item-container" *ngFor="let pet of genderPetOwner.pets">
+              <div class="item-text">
+                <div class="name">{{pet.name}}</div>
+              </div>
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="loading$ | async as showOverlay" class="dialog-overlay">
+  <mat-spinner mode="indeterminate" color="accent"></mat-spinner>
+</div>
