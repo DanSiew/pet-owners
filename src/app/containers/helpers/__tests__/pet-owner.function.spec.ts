@@ -1,6 +1,5 @@
-import { PetModel, PersonModel, GenderModel } from 'src/app/core/models';
+import { PetModel, GenderModel } from 'src/app/core/models';
 import { sortByPet, mapOwnerPets, mapGenderPets } from '../pet-owner.function';
-import { Dictionary } from '@ngrx/entity';
 
 describe('Pet owners helper', () => {
   describe('sortByPet', () => {

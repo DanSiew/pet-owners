@@ -10,7 +10,7 @@ export class PersonDetailsDataService {
   constructor(private http: HttpClient) {}
 
   public getPersonDetails(): Observable<any[]> {
-    const url = 'http://agl-developer-test.azurewebsites.net/people.json';
+    const url = 'http://localhost:3000/owners';
     return this.http.get<any[]>(url).pipe(catchError(this.handleError()));
   }
 

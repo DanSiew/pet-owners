@@ -1,4 +1,4 @@
-# pet owners
+# Pet Owners
 
 Pet Owners Web Application is developed as a demonstration using Angular 9 and NgRx 10.  
 It uses Node.js npm in Visual Studio Code to load angular and other open sources packages.
@@ -7,7 +7,7 @@ Refer Angular https://angular.io/
 
 The Pet Owners Web Application using @angular/cli and install @ngrx/store.
 
-The project calls a simple json web services in Azure Websites.  
+The project calls a simple json web services in localhost:3001.
 
 The Web Application is built on the Angular using typescripts as Modules, Containers, Components, Services and Stores.
 
@@ -18,3 +18,18 @@ It has one main component - app component and a container component owners list 
 The scripts uses the strong type using typescripts and es6 syntax and complies into javascripts.
 
 The projects has been set separation of concern for efficiency of maintenance and a single state storage.
+
+The purpose of this is exercise is to output a list of all the cats in alphabetical order under a heading of the gender of their owner.
+
+# Example:
+
+## Male
+
+- Angel
+- Molly
+- Tigger
+
+## Female
+
+- Gizmo
+- Jasper
